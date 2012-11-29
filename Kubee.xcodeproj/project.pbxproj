@@ -16,6 +16,7 @@
 		8C20A0F61665EAE90050E1B7 /* FileData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20A0F11665EAE90050E1B7 /* FileData.m */; };
 		8C20A0F71665EAE90050E1B7 /* FileHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20A0F31665EAE90050E1B7 /* FileHandler.m */; };
 		8C20A0F81665EAE90050E1B7 /* FileList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20A0F51665EAE90050E1B7 /* FileList.m */; };
+		8C8214F21666F11D003DAEBF /* pencil.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8C8214F11666F11D003DAEBF /* pencil.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		8C20A0F31665EAE90050E1B7 /* FileHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileHandler.m; sourceTree = "<group>"; };
 		8C20A0F41665EAE90050E1B7 /* FileList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileList.h; sourceTree = "<group>"; };
 		8C20A0F51665EAE90050E1B7 /* FileList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileList.m; sourceTree = "<group>"; };
+		8C8214F11666F11D003DAEBF /* pencil.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = pencil.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		8C20A0C01665DA5B0050E1B7 = {
 			isa = PBXGroup;
 			children = (
+				8C8214F11666F11D003DAEBF /* pencil.icns */,
 				8C20A0D51665DA5C0050E1B7 /* Kubee */,
 				8C20A0CE1665DA5C0050E1B7 /* Frameworks */,
 				8C20A0CC1665DA5C0050E1B7 /* Products */,
@@ -172,6 +175,7 @@
 				8C20A0DA1665DA5C0050E1B7 /* InfoPlist.strings in Resources */,
 				8C20A0E01665DA5C0050E1B7 /* Credits.rtf in Resources */,
 				8C20A0E61665DA5C0050E1B7 /* MainMenu.xib in Resources */,
+				8C8214F21666F11D003DAEBF /* pencil.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +318,7 @@
 				8C20A0EB1665DA5C0050E1B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
