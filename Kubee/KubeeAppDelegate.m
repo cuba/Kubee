@@ -134,6 +134,13 @@
         cellView.textField.stringValue = [self.fileList previewAtIndex:row];
         return cellView;
     }
+    else if ([identifier isEqualToString:@"directory"]) {
+        // We pass us as the owner so we can setup target/actions into this main controller object
+        NSTableCellView *cellView = [tableView makeViewWithIdentifier:identifier owner:self];
+        // Then setup properties on the cellView based on the column
+        cellView.textField.stringValue = [self.fileList pathAtIndex:row];
+        return cellView;
+    }
     else {
         NSAssert1(NO, @"Unhandled table column identifier %@", identifier);
     }
