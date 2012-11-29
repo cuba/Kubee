@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C20A0D01665DA5C0050E1B7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C20A0CF1665DA5C0050E1B7 /* Cocoa.framework */; };
+		8C20A0DA1665DA5C0050E1B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C20A0D81665DA5C0050E1B7 /* InfoPlist.strings */; };
+		8C20A0DC1665DA5C0050E1B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20A0DB1665DA5C0050E1B7 /* main.m */; };
+		8C20A0E01665DA5C0050E1B7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8C20A0DE1665DA5C0050E1B7 /* Credits.rtf */; };
+		8C20A0E31665DA5C0050E1B7 /* KubeeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20A0E21665DA5C0050E1B7 /* KubeeAppDelegate.m */; };
+		8C20A0E61665DA5C0050E1B7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C20A0E41665DA5C0050E1B7 /* MainMenu.xib */; };
+		8C20A0F61665EAE90050E1B7 /* FileData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20A0F11665EAE90050E1B7 /* FileData.m */; };
+		8C20A0F71665EAE90050E1B7 /* FileHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20A0F31665EAE90050E1B7 /* FileHandler.m */; };
+		8C20A0F81665EAE90050E1B7 /* FileList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20A0F51665EAE90050E1B7 /* FileList.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8C20A0CB1665DA5C0050E1B7 /* Kubee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kubee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C20A0CF1665DA5C0050E1B7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8C20A0D21665DA5C0050E1B7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		8C20A0D31665DA5C0050E1B7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8C20A0D41665DA5C0050E1B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8C20A0D71665DA5C0050E1B7 /* Kubee-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Kubee-Info.plist"; sourceTree = "<group>"; };
+		8C20A0D91665DA5C0050E1B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8C20A0DB1665DA5C0050E1B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8C20A0DD1665DA5C0050E1B7 /* Kubee-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kubee-Prefix.pch"; sourceTree = "<group>"; };
+		8C20A0DF1665DA5C0050E1B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		8C20A0E11665DA5C0050E1B7 /* KubeeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KubeeAppDelegate.h; sourceTree = "<group>"; };
+		8C20A0E21665DA5C0050E1B7 /* KubeeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KubeeAppDelegate.m; sourceTree = "<group>"; };
+		8C20A0E51665DA5C0050E1B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8C20A0F01665EAE80050E1B7 /* FileData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileData.h; sourceTree = "<group>"; };
+		8C20A0F11665EAE90050E1B7 /* FileData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileData.m; sourceTree = "<group>"; };
+		8C20A0F21665EAE90050E1B7 /* FileHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileHandler.h; sourceTree = "<group>"; };
+		8C20A0F31665EAE90050E1B7 /* FileHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileHandler.m; sourceTree = "<group>"; };
+		8C20A0F41665EAE90050E1B7 /* FileList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileList.h; sourceTree = "<group>"; };
+		8C20A0F51665EAE90050E1B7 /* FileList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileList.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C20A0C81665DA5C0050E1B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C20A0D01665DA5C0050E1B7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C20A0C01665DA5B0050E1B7 = {
+			isa = PBXGroup;
+			children = (
+				8C20A0D51665DA5C0050E1B7 /* Kubee */,
+				8C20A0CE1665DA5C0050E1B7 /* Frameworks */,
+				8C20A0CC1665DA5C0050E1B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C20A0CC1665DA5C0050E1B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C20A0CB1665DA5C0050E1B7 /* Kubee.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C20A0CE1665DA5C0050E1B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C20A0CF1665DA5C0050E1B7 /* Cocoa.framework */,
+				8C20A0D11665DA5C0050E1B7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C20A0D11665DA5C0050E1B7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C20A0D21665DA5C0050E1B7 /* AppKit.framework */,
+				8C20A0D31665DA5C0050E1B7 /* CoreData.framework */,
+				8C20A0D41665DA5C0050E1B7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		8C20A0D51665DA5C0050E1B7 /* Kubee */ = {
+			isa = PBXGroup;
+			children = (
+				8C20A0F01665EAE80050E1B7 /* FileData.h */,
+				8C20A0F11665EAE90050E1B7 /* FileData.m */,
+				8C20A0F21665EAE90050E1B7 /* FileHandler.h */,
+				8C20A0F31665EAE90050E1B7 /* FileHandler.m */,
+				8C20A0F41665EAE90050E1B7 /* FileList.h */,
+				8C20A0F51665EAE90050E1B7 /* FileList.m */,
+				8C20A0E11665DA5C0050E1B7 /* KubeeAppDelegate.h */,
+				8C20A0E21665DA5C0050E1B7 /* KubeeAppDelegate.m */,
+				8C20A0E41665DA5C0050E1B7 /* MainMenu.xib */,
+				8C20A0D61665DA5C0050E1B7 /* Supporting Files */,
+			);
+			path = Kubee;
+			sourceTree = "<group>";
+		};
+		8C20A0D61665DA5C0050E1B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C20A0D71665DA5C0050E1B7 /* Kubee-Info.plist */,
+				8C20A0D81665DA5C0050E1B7 /* InfoPlist.strings */,
+				8C20A0DB1665DA5C0050E1B7 /* main.m */,
+				8C20A0DD1665DA5C0050E1B7 /* Kubee-Prefix.pch */,
+				8C20A0DE1665DA5C0050E1B7 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C20A0CA1665DA5C0050E1B7 /* Kubee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C20A0E91665DA5C0050E1B7 /* Build configuration list for PBXNativeTarget "Kubee" */;
+			buildPhases = (
+				8C20A0C71665DA5C0050E1B7 /* Sources */,
+				8C20A0C81665DA5C0050E1B7 /* Frameworks */,
+				8C20A0C91665DA5C0050E1B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kubee;
+			productName = Kubee;
+			productReference = 8C20A0CB1665DA5C0050E1B7 /* Kubee.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C20A0C21665DA5C0050E1B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Kubee;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Jacob Sikorski";
+			};
+			buildConfigurationList = 8C20A0C51665DA5C0050E1B7 /* Build configuration list for PBXProject "Kubee" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8C20A0C01665DA5B0050E1B7;
+			productRefGroup = 8C20A0CC1665DA5C0050E1B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C20A0CA1665DA5C0050E1B7 /* Kubee */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C20A0C91665DA5C0050E1B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C20A0DA1665DA5C0050E1B7 /* InfoPlist.strings in Resources */,
+				8C20A0E01665DA5C0050E1B7 /* Credits.rtf in Resources */,
+				8C20A0E61665DA5C0050E1B7 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C20A0C71665DA5C0050E1B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C20A0DC1665DA5C0050E1B7 /* main.m in Sources */,
+				8C20A0E31665DA5C0050E1B7 /* KubeeAppDelegate.m in Sources */,
+				8C20A0F61665EAE90050E1B7 /* FileData.m in Sources */,
+				8C20A0F71665EAE90050E1B7 /* FileHandler.m in Sources */,
+				8C20A0F81665EAE90050E1B7 /* FileList.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8C20A0D81665DA5C0050E1B7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C20A0D91665DA5C0050E1B7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8C20A0DE1665DA5C0050E1B7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C20A0DF1665DA5C0050E1B7 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		8C20A0E41665DA5C0050E1B7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C20A0E51665DA5C0050E1B7 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C20A0E71665DA5C0050E1B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8C20A0E81665DA5C0050E1B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8C20A0EA1665DA5C0050E1B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kubee/Kubee-Prefix.pch";
+				INFOPLIST_FILE = "Kubee/Kubee-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8C20A0EB1665DA5C0050E1B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kubee/Kubee-Prefix.pch";
+				INFOPLIST_FILE = "Kubee/Kubee-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C20A0C51665DA5C0050E1B7 /* Build configuration list for PBXProject "Kubee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C20A0E71665DA5C0050E1B7 /* Debug */,
+				8C20A0E81665DA5C0050E1B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C20A0E91665DA5C0050E1B7 /* Build configuration list for PBXNativeTarget "Kubee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C20A0EA1665DA5C0050E1B7 /* Debug */,
+				8C20A0EB1665DA5C0050E1B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C20A0C21665DA5C0050E1B7 /* Project object */;
+}
