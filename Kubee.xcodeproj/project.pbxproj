@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C156F7E1850F4DB00B0B2C9 /* FileRenamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C156F7D1850F4DB00B0B2C9 /* FileRenamer.m */; };
 		8C20A0D01665DA5C0050E1B7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C20A0CF1665DA5C0050E1B7 /* Cocoa.framework */; };
 		8C20A0DA1665DA5C0050E1B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C20A0D81665DA5C0050E1B7 /* InfoPlist.strings */; };
 		8C20A0DC1665DA5C0050E1B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20A0DB1665DA5C0050E1B7 /* main.m */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C156F7C1850F4DB00B0B2C9 /* FileRenamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileRenamer.h; sourceTree = "<group>"; };
+		8C156F7D1850F4DB00B0B2C9 /* FileRenamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileRenamer.m; sourceTree = "<group>"; };
 		8C20A0CB1665DA5C0050E1B7 /* Kubee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kubee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C20A0CF1665DA5C0050E1B7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		8C20A0D21665DA5C0050E1B7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -100,6 +103,8 @@
 				8C20A0F31665EAE90050E1B7 /* FileHandler.m */,
 				8C20A0F41665EAE90050E1B7 /* FileList.h */,
 				8C20A0F51665EAE90050E1B7 /* FileList.m */,
+				8C156F7C1850F4DB00B0B2C9 /* FileRenamer.h */,
+				8C156F7D1850F4DB00B0B2C9 /* FileRenamer.m */,
 				8C20A0E11665DA5C0050E1B7 /* KubeeAppDelegate.h */,
 				8C20A0E21665DA5C0050E1B7 /* KubeeAppDelegate.m */,
 				8C20A0E41665DA5C0050E1B7 /* MainMenu.xib */,
@@ -186,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C156F7E1850F4DB00B0B2C9 /* FileRenamer.m in Sources */,
 				8C20A0DC1665DA5C0050E1B7 /* main.m in Sources */,
 				8C20A0E31665DA5C0050E1B7 /* KubeeAppDelegate.m in Sources */,
 				8C20A0F61665EAE90050E1B7 /* FileData.m in Sources */,

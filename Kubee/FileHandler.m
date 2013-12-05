@@ -76,7 +76,7 @@ NSString const *varIndicator = @":";
     NSMutableString *result = [NSMutableString stringWithString:newString];
     
     //REPLACE NUMBERS
-    NSMutableArray *numbers = [[NSMutableArray alloc] init];
+    NSMutableArray *numbers = [[[NSMutableArray alloc] init] autorelease];
     
     NSUInteger loc = 0;
     NSUInteger len = 0;

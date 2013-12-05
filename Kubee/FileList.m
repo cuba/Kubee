@@ -21,7 +21,7 @@
 {
     self = [super init];
     if (self) {
-        fileManager = [[NSFileManager alloc] init];
+        fileRenamer = [[FileRenamer alloc] init];
         _fileHandler = [[FileHandler alloc] init];
         _files = [[NSMutableArray alloc] init];
     }
@@ -32,7 +32,7 @@
 - (void)dealloc
 {
     [_files release];
-    [fileManager release];
+    [fileRenamer release];
     [FileHandler release];
     [super dealloc];
 }
@@ -104,7 +104,7 @@
 
 - (BOOL) checkFileAtIndex:(NSUInteger)index
 {
-    return [fileManager fileExistsAtPath:[self fullPathAtIndex:index]];
+    return [fileRenamer checkFileAtPath:[self fullPathAtIndex:index]];
 }
 
 - (void) refreshFileAtIndex:(NSUInteger)index
@@ -165,7 +165,7 @@
 {
     NSString *newPath = [NSString stringWithString:[[self pathAtIndex:index] stringByAppendingPathComponent:[self previewAtIndex:index]]];
     
-    if([fileManager moveItemAtPath:[self fullPathAtIndex:index] toPath:newPath error:error]){
+    if([fileRenamer renameFileAtPath:[self fullPathAtIndex:index] toPath:newPath error:error]){
         [self setFileWithWithPath:newPath atIndex:index];
         return YES;
     }
@@ -178,7 +178,7 @@
 {
     NSString *newPath = [NSString stringWithString:[[self pathAtIndex:index] stringByAppendingPathComponent:[self previewAtIndex:index]]];
     
-    if([fileManager copyItemAtPath:[self fullPathAtIndex:index] toPath:newPath error:error]){
+    if([fileRenamer copyFileAtPath:[self fullPathAtIndex:index] toPath:newPath error:error]){
         [self setFileWithWithPath:newPath atIndex:index];
         return YES;
     }

@@ -9,10 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "FileData.h"
 #import "FileHandler.h"
+#import "FileRenamer.h"
 
 @interface FileList: NSObject {
 @private
-    NSFileManager *fileManager;
+    FileRenamer *fileRenamer;
 }
 @property (nonatomic, readonly) NSUInteger count;
 
