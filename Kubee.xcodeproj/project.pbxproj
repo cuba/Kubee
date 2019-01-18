@@ -7,134 +7,304 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C156F7E1850F4DB00B0B2C9 /* FileRenamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C156F7D1850F4DB00B0B2C9 /* FileRenamer.m */; };
-		8C20A0D01665DA5C0050E1B7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C20A0CF1665DA5C0050E1B7 /* Cocoa.framework */; };
-		8C20A0DA1665DA5C0050E1B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C20A0D81665DA5C0050E1B7 /* InfoPlist.strings */; };
-		8C20A0DC1665DA5C0050E1B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20A0DB1665DA5C0050E1B7 /* main.m */; };
-		8C20A0E01665DA5C0050E1B7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8C20A0DE1665DA5C0050E1B7 /* Credits.rtf */; };
-		8C20A0E31665DA5C0050E1B7 /* KubeeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20A0E21665DA5C0050E1B7 /* KubeeAppDelegate.m */; };
-		8C20A0E61665DA5C0050E1B7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C20A0E41665DA5C0050E1B7 /* MainMenu.xib */; };
-		8C20A0F61665EAE90050E1B7 /* FileData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20A0F11665EAE90050E1B7 /* FileData.m */; };
-		8C20A0F71665EAE90050E1B7 /* FileHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20A0F31665EAE90050E1B7 /* FileHandler.m */; };
-		8C20A0F81665EAE90050E1B7 /* FileList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20A0F51665EAE90050E1B7 /* FileList.m */; };
-		8C8214F21666F11D003DAEBF /* pencil.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8C8214F11666F11D003DAEBF /* pencil.icns */; };
+		8C69A8341E984B73004FB1BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A8331E984B73004FB1BC /* AppDelegate.swift */; };
+		8C69A8361E984B73004FB1BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A8351E984B73004FB1BC /* ViewController.swift */; };
+		8C69A8381E984B73004FB1BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C69A8371E984B73004FB1BC /* Assets.xcassets */; };
+		8C69A8461E984B73004FB1BC /* KubeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A8451E984B73004FB1BC /* KubeeTests.swift */; };
+		8C69A8511E984B73004FB1BC /* KubeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A8501E984B73004FB1BC /* KubeeUITests.swift */; };
+		8C69A8601E984B9A004FB1BC /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A85F1E984B9A004FB1BC /* File.swift */; };
+		8C69A8641E984D52004FB1BC /* StringComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A8631E984D52004FB1BC /* StringComponent.swift */; };
+		8C69A8661E984E3D004FB1BC /* FilterComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A8651E984E3D004FB1BC /* FilterComponent.swift */; };
+		8C69A8681E984ECD004FB1BC /* FilterSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A8671E984ECD004FB1BC /* FilterSettings.swift */; };
+		8C69A86A1E985A79004FB1BC /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A8691E985A79004FB1BC /* Filter.swift */; };
+		8C69A86D1E985EC0004FB1BC /* TextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A86C1E985EC0004FB1BC /* TextProvider.swift */; };
+		8C69A8701E985F8B004FB1BC /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A86F1E985F8B004FB1BC /* String+Extensions.swift */; };
+		8C69A8721E985FB1004FB1BC /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A8711E985FB1004FB1BC /* Bundle+Extensions.swift */; };
+		8C69A8751E986D8F004FB1BC /* FilterParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A8741E986D8F004FB1BC /* FilterParser.swift */; };
+		8C69A8771E987909004FB1BC /* FileNameParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A8761E987909004FB1BC /* FileNameParser.swift */; };
+		8C69A87B1E9930AE004FB1BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C69A87A1E9930AE004FB1BC /* Main.storyboard */; };
+		8C69A8831E9931AA004FB1BC /* FileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A8821E9931AA004FB1BC /* FileListViewController.swift */; };
+		8C69A8851E9931BA004FB1BC /* SelectorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A8841E9931BA004FB1BC /* SelectorsViewController.swift */; };
+		8C69A8871E9931D5004FB1BC /* RenameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A8861E9931D5004FB1BC /* RenameViewController.swift */; };
+		8C69A88F1E993399004FB1BC /* TableCellViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A88E1E993399004FB1BC /* TableCellViewProvider.swift */; };
+		8C69A8921E993432004FB1BC /* SelectorTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C69A8901E993432004FB1BC /* SelectorTableCellView.xib */; };
+		8C69A8931E993432004FB1BC /* SelectorTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A8911E993432004FB1BC /* SelectorTableCellView.swift */; };
+		8C69A8961E99343F004FB1BC /* FileTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A8941E99343F004FB1BC /* FileTableCellView.swift */; };
+		8C69A8971E993440004FB1BC /* FileTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C69A8951E99343F004FB1BC /* FileTableCellView.xib */; };
+		8C69A8991E993753004FB1BC /* ErrorIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A8981E993753004FB1BC /* ErrorIndicatorView.swift */; };
+		8C69A89C1E993792004FB1BC /* FilterErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C69A89A1E993792004FB1BC /* FilterErrorView.xib */; };
+		8C69A89D1E993792004FB1BC /* FilterErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A89B1E993792004FB1BC /* FilterErrorView.swift */; };
+		8C69A8A01E9937C8004FB1BC /* SourceListSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A89E1E9937C8004FB1BC /* SourceListSplitViewController.swift */; };
+		8C69A8A11E9937C8004FB1BC /* ContentSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A89F1E9937C8004FB1BC /* ContentSplitViewController.swift */; };
+		8C69A8A31E9938B0004FB1BC /* ViewControllerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A8A21E9938B0004FB1BC /* ViewControllerProvider.swift */; };
+		8C69A8A51E993AC1004FB1BC /* FilterErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A8A41E993AC1004FB1BC /* FilterErrorViewController.swift */; };
+		8C69A8A71E994130004FB1BC /* FileRenameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A8A61E994130004FB1BC /* FileRenameManager.swift */; };
+		8C69A8AA1E9955CF004FB1BC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C69A8AC1E9955CF004FB1BC /* Localizable.strings */; };
+		8C69A8AE1E995B8F004FB1BC /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A8AD1E995B8F004FB1BC /* MainWindowController.swift */; };
+		8C69A8B01E996B3A004FB1BC /* Selector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A8AF1E996B3A004FB1BC /* Selector.swift */; };
+		8C69A8B21E999EE8004FB1BC /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A8B11E999EE8004FB1BC /* Weak.swift */; };
+		8C69A8B41E99ADB5004FB1BC /* FileList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A8B31E99ADB5004FB1BC /* FileList.swift */; };
+		8C69A8B61E99B436004FB1BC /* ReplaceFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69A8B51E99B436004FB1BC /* ReplaceFilter.swift */; };
+		8C822CD61EA2839F00887253 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 8C822CD51EA2839F00887253 /* Cartfile */; };
+		8C822CDB1EA2848800887253 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C822CDA1EA2848800887253 /* ObjectMapper.framework */; };
+		8C822CDE1EA286C600887253 /* Persistor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C822CDD1EA286C600887253 /* Persistor.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8C69A8421E984B73004FB1BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C69A8281E984B72004FB1BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C69A82F1E984B73004FB1BC;
+			remoteInfo = Kubee;
+		};
+		8C69A84D1E984B73004FB1BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C69A8281E984B72004FB1BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C69A82F1E984B73004FB1BC;
+			remoteInfo = Kubee;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		8C156F7C1850F4DB00B0B2C9 /* FileRenamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileRenamer.h; sourceTree = "<group>"; };
-		8C156F7D1850F4DB00B0B2C9 /* FileRenamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileRenamer.m; sourceTree = "<group>"; };
-		8C20A0CB1665DA5C0050E1B7 /* Kubee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kubee.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C20A0CF1665DA5C0050E1B7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		8C20A0D21665DA5C0050E1B7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		8C20A0D31665DA5C0050E1B7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		8C20A0D41665DA5C0050E1B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		8C20A0D71665DA5C0050E1B7 /* Kubee-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Kubee-Info.plist"; sourceTree = "<group>"; };
-		8C20A0D91665DA5C0050E1B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8C20A0DB1665DA5C0050E1B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8C20A0DD1665DA5C0050E1B7 /* Kubee-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kubee-Prefix.pch"; sourceTree = "<group>"; };
-		8C20A0DF1665DA5C0050E1B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		8C20A0E11665DA5C0050E1B7 /* KubeeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KubeeAppDelegate.h; sourceTree = "<group>"; };
-		8C20A0E21665DA5C0050E1B7 /* KubeeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KubeeAppDelegate.m; sourceTree = "<group>"; };
-		8C20A0E51665DA5C0050E1B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		8C20A0F01665EAE80050E1B7 /* FileData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileData.h; sourceTree = "<group>"; };
-		8C20A0F11665EAE90050E1B7 /* FileData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileData.m; sourceTree = "<group>"; };
-		8C20A0F21665EAE90050E1B7 /* FileHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileHandler.h; sourceTree = "<group>"; };
-		8C20A0F31665EAE90050E1B7 /* FileHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileHandler.m; sourceTree = "<group>"; };
-		8C20A0F41665EAE90050E1B7 /* FileList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileList.h; sourceTree = "<group>"; };
-		8C20A0F51665EAE90050E1B7 /* FileList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileList.m; sourceTree = "<group>"; };
-		8C8214F11666F11D003DAEBF /* pencil.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = pencil.icns; sourceTree = "<group>"; };
+		8C69A8301E984B73004FB1BC /* Kubee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kubee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C69A8331E984B73004FB1BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8C69A8351E984B73004FB1BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C69A8371E984B73004FB1BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C69A83C1E984B73004FB1BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C69A8411E984B73004FB1BC /* KubeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KubeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C69A8451E984B73004FB1BC /* KubeeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KubeeTests.swift; sourceTree = "<group>"; };
+		8C69A8471E984B73004FB1BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C69A84C1E984B73004FB1BC /* KubeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KubeeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C69A8501E984B73004FB1BC /* KubeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KubeeUITests.swift; sourceTree = "<group>"; };
+		8C69A8521E984B73004FB1BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C69A85F1E984B9A004FB1BC /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		8C69A8631E984D52004FB1BC /* StringComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringComponent.swift; path = Models/StringComponent.swift; sourceTree = "<group>"; };
+		8C69A8651E984E3D004FB1BC /* FilterComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilterComponent.swift; path = Models/FilterComponent.swift; sourceTree = "<group>"; };
+		8C69A8671E984ECD004FB1BC /* FilterSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilterSettings.swift; path = Models/FilterSettings.swift; sourceTree = "<group>"; };
+		8C69A8691E985A79004FB1BC /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Models/Filter.swift; sourceTree = "<group>"; };
+		8C69A86C1E985EC0004FB1BC /* TextProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextProvider.swift; path = Providers/TextProvider.swift; sourceTree = "<group>"; };
+		8C69A86F1E985F8B004FB1BC /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extensions.swift"; path = "Extensions/String+Extensions.swift"; sourceTree = "<group>"; };
+		8C69A8711E985FB1004FB1BC /* Bundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Bundle+Extensions.swift"; path = "Extensions/Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		8C69A8741E986D8F004FB1BC /* FilterParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilterParser.swift; path = Utilities/FilterParser.swift; sourceTree = "<group>"; };
+		8C69A8761E987909004FB1BC /* FileNameParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileNameParser.swift; path = Models/FileNameParser.swift; sourceTree = "<group>"; };
+		8C69A87A1E9930AE004FB1BC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8C69A8821E9931AA004FB1BC /* FileListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileListViewController.swift; path = ViewControllers/FileListViewController.swift; sourceTree = "<group>"; };
+		8C69A8841E9931BA004FB1BC /* SelectorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectorsViewController.swift; path = ViewControllers/SelectorsViewController.swift; sourceTree = "<group>"; };
+		8C69A8861E9931D5004FB1BC /* RenameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenameViewController.swift; sourceTree = "<group>"; };
+		8C69A88E1E993399004FB1BC /* TableCellViewProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableCellViewProvider.swift; path = Providers/TableCellViewProvider.swift; sourceTree = "<group>"; };
+		8C69A8901E993432004FB1BC /* SelectorTableCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectorTableCellView.xib; sourceTree = "<group>"; };
+		8C69A8911E993432004FB1BC /* SelectorTableCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectorTableCellView.swift; sourceTree = "<group>"; };
+		8C69A8941E99343F004FB1BC /* FileTableCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileTableCellView.swift; sourceTree = "<group>"; };
+		8C69A8951E99343F004FB1BC /* FileTableCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FileTableCellView.xib; sourceTree = "<group>"; };
+		8C69A8981E993753004FB1BC /* ErrorIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorIndicatorView.swift; sourceTree = "<group>"; };
+		8C69A89A1E993792004FB1BC /* FilterErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterErrorView.xib; sourceTree = "<group>"; };
+		8C69A89B1E993792004FB1BC /* FilterErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterErrorView.swift; sourceTree = "<group>"; };
+		8C69A89E1E9937C8004FB1BC /* SourceListSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceListSplitViewController.swift; sourceTree = "<group>"; };
+		8C69A89F1E9937C8004FB1BC /* ContentSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentSplitViewController.swift; sourceTree = "<group>"; };
+		8C69A8A21E9938B0004FB1BC /* ViewControllerProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerProvider.swift; path = Providers/ViewControllerProvider.swift; sourceTree = "<group>"; };
+		8C69A8A41E993AC1004FB1BC /* FilterErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterErrorViewController.swift; sourceTree = "<group>"; };
+		8C69A8A61E994130004FB1BC /* FileRenameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileRenameManager.swift; sourceTree = "<group>"; };
+		8C69A8AB1E9955CF004FB1BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8C69A8AD1E995B8F004FB1BC /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		8C69A8AF1E996B3A004FB1BC /* Selector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Selector.swift; path = Models/Selector.swift; sourceTree = "<group>"; };
+		8C69A8B11E999EE8004FB1BC /* Weak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Weak.swift; path = Models/Weak.swift; sourceTree = "<group>"; };
+		8C69A8B31E99ADB5004FB1BC /* FileList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileList.swift; path = Models/FileList.swift; sourceTree = "<group>"; };
+		8C69A8B51E99B436004FB1BC /* ReplaceFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReplaceFilter.swift; path = Models/ReplaceFilter.swift; sourceTree = "<group>"; };
+		8C822CD51EA2839F00887253 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
+		8C822CDA1EA2848800887253 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/Mac/ObjectMapper.framework; sourceTree = "<group>"; };
+		8C822CDD1EA286C600887253 /* Persistor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistor.swift; sourceTree = "<group>"; };
+		8CF5034E1EA6FCFD004958CA /* Kubee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kubee.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8C20A0C81665DA5C0050E1B7 /* Frameworks */ = {
+		8C69A82D1E984B73004FB1BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C20A0D01665DA5C0050E1B7 /* Cocoa.framework in Frameworks */,
+				8C822CDB1EA2848800887253 /* ObjectMapper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C69A83E1E984B73004FB1BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C69A8491E984B73004FB1BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8C20A0C01665DA5B0050E1B7 = {
+		8C69A8271E984B72004FB1BC = {
 			isa = PBXGroup;
 			children = (
-				8C8214F11666F11D003DAEBF /* pencil.icns */,
-				8C20A0D51665DA5C0050E1B7 /* Kubee */,
-				8C20A0CE1665DA5C0050E1B7 /* Frameworks */,
-				8C20A0CC1665DA5C0050E1B7 /* Products */,
+				8C69A8321E984B73004FB1BC /* Kubee */,
+				8C69A8441E984B73004FB1BC /* KubeeTests */,
+				8C69A84F1E984B73004FB1BC /* KubeeUITests */,
+				8C69A8311E984B73004FB1BC /* Products */,
+				8C822CD91EA2848800887253 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		8C20A0CC1665DA5C0050E1B7 /* Products */ = {
+		8C69A8311E984B73004FB1BC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8C20A0CB1665DA5C0050E1B7 /* Kubee.app */,
+				8C69A8301E984B73004FB1BC /* Kubee.app */,
+				8C69A8411E984B73004FB1BC /* KubeeTests.xctest */,
+				8C69A84C1E984B73004FB1BC /* KubeeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8C20A0CE1665DA5C0050E1B7 /* Frameworks */ = {
+		8C69A8321E984B73004FB1BC /* Kubee */ = {
 			isa = PBXGroup;
 			children = (
-				8C20A0CF1665DA5C0050E1B7 /* Cocoa.framework */,
-				8C20A0D11665DA5C0050E1B7 /* Other Frameworks */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8C20A0D11665DA5C0050E1B7 /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8C20A0D21665DA5C0050E1B7 /* AppKit.framework */,
-				8C20A0D31665DA5C0050E1B7 /* CoreData.framework */,
-				8C20A0D41665DA5C0050E1B7 /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
-		8C20A0D51665DA5C0050E1B7 /* Kubee */ = {
-			isa = PBXGroup;
-			children = (
-				8C20A0F01665EAE80050E1B7 /* FileData.h */,
-				8C20A0F11665EAE90050E1B7 /* FileData.m */,
-				8C20A0F21665EAE90050E1B7 /* FileHandler.h */,
-				8C20A0F31665EAE90050E1B7 /* FileHandler.m */,
-				8C20A0F41665EAE90050E1B7 /* FileList.h */,
-				8C20A0F51665EAE90050E1B7 /* FileList.m */,
-				8C156F7C1850F4DB00B0B2C9 /* FileRenamer.h */,
-				8C156F7D1850F4DB00B0B2C9 /* FileRenamer.m */,
-				8C20A0E11665DA5C0050E1B7 /* KubeeAppDelegate.h */,
-				8C20A0E21665DA5C0050E1B7 /* KubeeAppDelegate.m */,
-				8C20A0E41665DA5C0050E1B7 /* MainMenu.xib */,
-				8C20A0D61665DA5C0050E1B7 /* Supporting Files */,
+				8CF5034E1EA6FCFD004958CA /* Kubee.entitlements */,
+				8C69A8731E986D53004FB1BC /* Utilities */,
+				8C69A86E1E985F6D004FB1BC /* Extensions */,
+				8C69A86B1E985EAA004FB1BC /* Providers */,
+				8C69A85E1E984B7C004FB1BC /* Models */,
+				8C69A87F1E993150004FB1BC /* ViewControllers */,
+				8C69A8331E984B73004FB1BC /* AppDelegate.swift */,
+				8C69A87A1E9930AE004FB1BC /* Main.storyboard */,
+				8C69A8351E984B73004FB1BC /* ViewController.swift */,
+				8C69A8371E984B73004FB1BC /* Assets.xcassets */,
+				8C69A83C1E984B73004FB1BC /* Info.plist */,
+				8C69A8AC1E9955CF004FB1BC /* Localizable.strings */,
+				8C822CD51EA2839F00887253 /* Cartfile */,
 			);
 			path = Kubee;
 			sourceTree = "<group>";
 		};
-		8C20A0D61665DA5C0050E1B7 /* Supporting Files */ = {
+		8C69A8441E984B73004FB1BC /* KubeeTests */ = {
 			isa = PBXGroup;
 			children = (
-				8C20A0D71665DA5C0050E1B7 /* Kubee-Info.plist */,
-				8C20A0D81665DA5C0050E1B7 /* InfoPlist.strings */,
-				8C20A0DB1665DA5C0050E1B7 /* main.m */,
-				8C20A0DD1665DA5C0050E1B7 /* Kubee-Prefix.pch */,
-				8C20A0DE1665DA5C0050E1B7 /* Credits.rtf */,
+				8C69A8451E984B73004FB1BC /* KubeeTests.swift */,
+				8C69A8471E984B73004FB1BC /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = KubeeTests;
+			sourceTree = "<group>";
+		};
+		8C69A84F1E984B73004FB1BC /* KubeeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8C69A8501E984B73004FB1BC /* KubeeUITests.swift */,
+				8C69A8521E984B73004FB1BC /* Info.plist */,
+			);
+			path = KubeeUITests;
+			sourceTree = "<group>";
+		};
+		8C69A85E1E984B7C004FB1BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8C69A8B31E99ADB5004FB1BC /* FileList.swift */,
+				8C69A85F1E984B9A004FB1BC /* File.swift */,
+				8C69A8631E984D52004FB1BC /* StringComponent.swift */,
+				8C69A8651E984E3D004FB1BC /* FilterComponent.swift */,
+				8C69A8671E984ECD004FB1BC /* FilterSettings.swift */,
+				8C69A8691E985A79004FB1BC /* Filter.swift */,
+				8C69A8B51E99B436004FB1BC /* ReplaceFilter.swift */,
+				8C69A8AF1E996B3A004FB1BC /* Selector.swift */,
+				8C69A8B11E999EE8004FB1BC /* Weak.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8C69A86B1E985EAA004FB1BC /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				8C69A86C1E985EC0004FB1BC /* TextProvider.swift */,
+				8C69A88E1E993399004FB1BC /* TableCellViewProvider.swift */,
+				8C69A8A21E9938B0004FB1BC /* ViewControllerProvider.swift */,
+			);
+			name = Providers;
+			sourceTree = "<group>";
+		};
+		8C69A86E1E985F6D004FB1BC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8C69A86F1E985F8B004FB1BC /* String+Extensions.swift */,
+				8C69A8711E985FB1004FB1BC /* Bundle+Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		8C69A8731E986D53004FB1BC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8C69A8741E986D8F004FB1BC /* FilterParser.swift */,
+				8C69A8761E987909004FB1BC /* FileNameParser.swift */,
+				8C69A8A61E994130004FB1BC /* FileRenameManager.swift */,
+				8C822CDD1EA286C600887253 /* Persistor.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		8C69A87F1E993150004FB1BC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8C69A8811E993187004FB1BC /* Views */,
+				8C69A8801E993160004FB1BC /* Cells */,
+				8C69A8AD1E995B8F004FB1BC /* MainWindowController.swift */,
+				8C69A8821E9931AA004FB1BC /* FileListViewController.swift */,
+				8C69A8841E9931BA004FB1BC /* SelectorsViewController.swift */,
+				8C69A8861E9931D5004FB1BC /* RenameViewController.swift */,
+				8C69A89E1E9937C8004FB1BC /* SourceListSplitViewController.swift */,
+				8C69A8A41E993AC1004FB1BC /* FilterErrorViewController.swift */,
+				8C69A89F1E9937C8004FB1BC /* ContentSplitViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8C69A8801E993160004FB1BC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8C69A8951E99343F004FB1BC /* FileTableCellView.xib */,
+				8C69A8941E99343F004FB1BC /* FileTableCellView.swift */,
+				8C69A8901E993432004FB1BC /* SelectorTableCellView.xib */,
+				8C69A8911E993432004FB1BC /* SelectorTableCellView.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		8C69A8811E993187004FB1BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8C69A89A1E993792004FB1BC /* FilterErrorView.xib */,
+				8C69A89B1E993792004FB1BC /* FilterErrorView.swift */,
+				8C69A8981E993753004FB1BC /* ErrorIndicatorView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8C822CD91EA2848800887253 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C822CDA1EA2848800887253 /* ObjectMapper.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8C20A0CA1665DA5C0050E1B7 /* Kubee */ = {
+		8C69A82F1E984B73004FB1BC /* Kubee */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8C20A0E91665DA5C0050E1B7 /* Build configuration list for PBXNativeTarget "Kubee" */;
+			buildConfigurationList = 8C69A8551E984B73004FB1BC /* Build configuration list for PBXNativeTarget "Kubee" */;
 			buildPhases = (
-				8C20A0C71665DA5C0050E1B7 /* Sources */,
-				8C20A0C81665DA5C0050E1B7 /* Frameworks */,
-				8C20A0C91665DA5C0050E1B7 /* Resources */,
+				8C69A82C1E984B73004FB1BC /* Sources */,
+				8C69A82D1E984B73004FB1BC /* Frameworks */,
+				8C69A82E1E984B73004FB1BC /* Resources */,
+				8C822CDC1EA2848D00887253 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -142,191 +312,467 @@
 			);
 			name = Kubee;
 			productName = Kubee;
-			productReference = 8C20A0CB1665DA5C0050E1B7 /* Kubee.app */;
+			productReference = 8C69A8301E984B73004FB1BC /* Kubee.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8C69A8401E984B73004FB1BC /* KubeeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C69A8581E984B73004FB1BC /* Build configuration list for PBXNativeTarget "KubeeTests" */;
+			buildPhases = (
+				8C69A83D1E984B73004FB1BC /* Sources */,
+				8C69A83E1E984B73004FB1BC /* Frameworks */,
+				8C69A83F1E984B73004FB1BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C69A8431E984B73004FB1BC /* PBXTargetDependency */,
+			);
+			name = KubeeTests;
+			productName = KubeeTests;
+			productReference = 8C69A8411E984B73004FB1BC /* KubeeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8C69A84B1E984B73004FB1BC /* KubeeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C69A85B1E984B73004FB1BC /* Build configuration list for PBXNativeTarget "KubeeUITests" */;
+			buildPhases = (
+				8C69A8481E984B73004FB1BC /* Sources */,
+				8C69A8491E984B73004FB1BC /* Frameworks */,
+				8C69A84A1E984B73004FB1BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C69A84E1E984B73004FB1BC /* PBXTargetDependency */,
+			);
+			name = KubeeUITests;
+			productName = KubeeUITests;
+			productReference = 8C69A84C1E984B73004FB1BC /* KubeeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8C20A0C21665DA5C0050E1B7 /* Project object */ = {
+		8C69A8281E984B72004FB1BC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = Kubee;
-				LastUpgradeCheck = 0450;
-				ORGANIZATIONNAME = "Jacob Sikorski";
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Studio MDE Inc.";
+				TargetAttributes = {
+					8C69A82F1E984B73004FB1BC = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 5P99QDD6WR;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					8C69A8401E984B73004FB1BC = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 5P99QDD6WR;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8C69A82F1E984B73004FB1BC;
+					};
+					8C69A84B1E984B73004FB1BC = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 5P99QDD6WR;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8C69A82F1E984B73004FB1BC;
+					};
+				};
 			};
-			buildConfigurationList = 8C20A0C51665DA5C0050E1B7 /* Build configuration list for PBXProject "Kubee" */;
+			buildConfigurationList = 8C69A82B1E984B72004FB1BC /* Build configuration list for PBXProject "Kubee" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 8C20A0C01665DA5B0050E1B7;
-			productRefGroup = 8C20A0CC1665DA5C0050E1B7 /* Products */;
+			mainGroup = 8C69A8271E984B72004FB1BC;
+			productRefGroup = 8C69A8311E984B73004FB1BC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8C20A0CA1665DA5C0050E1B7 /* Kubee */,
+				8C69A82F1E984B73004FB1BC /* Kubee */,
+				8C69A8401E984B73004FB1BC /* KubeeTests */,
+				8C69A84B1E984B73004FB1BC /* KubeeUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8C20A0C91665DA5C0050E1B7 /* Resources */ = {
+		8C69A82E1E984B73004FB1BC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C20A0DA1665DA5C0050E1B7 /* InfoPlist.strings in Resources */,
-				8C20A0E01665DA5C0050E1B7 /* Credits.rtf in Resources */,
-				8C20A0E61665DA5C0050E1B7 /* MainMenu.xib in Resources */,
-				8C8214F21666F11D003DAEBF /* pencil.icns in Resources */,
+				8C69A8381E984B73004FB1BC /* Assets.xcassets in Resources */,
+				8C69A8AA1E9955CF004FB1BC /* Localizable.strings in Resources */,
+				8C69A89C1E993792004FB1BC /* FilterErrorView.xib in Resources */,
+				8C69A8971E993440004FB1BC /* FileTableCellView.xib in Resources */,
+				8C69A8921E993432004FB1BC /* SelectorTableCellView.xib in Resources */,
+				8C69A87B1E9930AE004FB1BC /* Main.storyboard in Resources */,
+				8C822CD61EA2839F00887253 /* Cartfile in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C69A83F1E984B73004FB1BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C69A84A1E984B73004FB1BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8C822CDC1EA2848D00887253 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/ObjectMapper.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		8C20A0C71665DA5C0050E1B7 /* Sources */ = {
+		8C69A82C1E984B73004FB1BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C156F7E1850F4DB00B0B2C9 /* FileRenamer.m in Sources */,
-				8C20A0DC1665DA5C0050E1B7 /* main.m in Sources */,
-				8C20A0E31665DA5C0050E1B7 /* KubeeAppDelegate.m in Sources */,
-				8C20A0F61665EAE90050E1B7 /* FileData.m in Sources */,
-				8C20A0F71665EAE90050E1B7 /* FileHandler.m in Sources */,
-				8C20A0F81665EAE90050E1B7 /* FileList.m in Sources */,
+				8C69A8701E985F8B004FB1BC /* String+Extensions.swift in Sources */,
+				8C69A8641E984D52004FB1BC /* StringComponent.swift in Sources */,
+				8C69A8AE1E995B8F004FB1BC /* MainWindowController.swift in Sources */,
+				8C69A8361E984B73004FB1BC /* ViewController.swift in Sources */,
+				8C69A8A01E9937C8004FB1BC /* SourceListSplitViewController.swift in Sources */,
+				8C69A8A11E9937C8004FB1BC /* ContentSplitViewController.swift in Sources */,
+				8C69A8681E984ECD004FB1BC /* FilterSettings.swift in Sources */,
+				8C69A8751E986D8F004FB1BC /* FilterParser.swift in Sources */,
+				8C69A8871E9931D5004FB1BC /* RenameViewController.swift in Sources */,
+				8C69A8341E984B73004FB1BC /* AppDelegate.swift in Sources */,
+				8C69A8A51E993AC1004FB1BC /* FilterErrorViewController.swift in Sources */,
+				8C69A8B01E996B3A004FB1BC /* Selector.swift in Sources */,
+				8C69A8931E993432004FB1BC /* SelectorTableCellView.swift in Sources */,
+				8C69A8B21E999EE8004FB1BC /* Weak.swift in Sources */,
+				8C69A86D1E985EC0004FB1BC /* TextProvider.swift in Sources */,
+				8C69A8B41E99ADB5004FB1BC /* FileList.swift in Sources */,
+				8C69A8961E99343F004FB1BC /* FileTableCellView.swift in Sources */,
+				8C69A8A71E994130004FB1BC /* FileRenameManager.swift in Sources */,
+				8C69A88F1E993399004FB1BC /* TableCellViewProvider.swift in Sources */,
+				8C69A8831E9931AA004FB1BC /* FileListViewController.swift in Sources */,
+				8C69A86A1E985A79004FB1BC /* Filter.swift in Sources */,
+				8C69A8B61E99B436004FB1BC /* ReplaceFilter.swift in Sources */,
+				8C69A8851E9931BA004FB1BC /* SelectorsViewController.swift in Sources */,
+				8C69A89D1E993792004FB1BC /* FilterErrorView.swift in Sources */,
+				8C69A8991E993753004FB1BC /* ErrorIndicatorView.swift in Sources */,
+				8C69A8A31E9938B0004FB1BC /* ViewControllerProvider.swift in Sources */,
+				8C69A8721E985FB1004FB1BC /* Bundle+Extensions.swift in Sources */,
+				8C69A8771E987909004FB1BC /* FileNameParser.swift in Sources */,
+				8C69A8601E984B9A004FB1BC /* File.swift in Sources */,
+				8C822CDE1EA286C600887253 /* Persistor.swift in Sources */,
+				8C69A8661E984E3D004FB1BC /* FilterComponent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C69A83D1E984B73004FB1BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C69A8461E984B73004FB1BC /* KubeeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C69A8481E984B73004FB1BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C69A8511E984B73004FB1BC /* KubeeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8C69A8431E984B73004FB1BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C69A82F1E984B73004FB1BC /* Kubee */;
+			targetProxy = 8C69A8421E984B73004FB1BC /* PBXContainerItemProxy */;
+		};
+		8C69A84E1E984B73004FB1BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C69A82F1E984B73004FB1BC /* Kubee */;
+			targetProxy = 8C69A84D1E984B73004FB1BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		8C20A0D81665DA5C0050E1B7 /* InfoPlist.strings */ = {
+		8C69A8AC1E9955CF004FB1BC /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8C20A0D91665DA5C0050E1B7 /* en */,
+				8C69A8AB1E9955CF004FB1BC /* en */,
 			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		8C20A0DE1665DA5C0050E1B7 /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8C20A0DF1665DA5C0050E1B7 /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		8C20A0E41665DA5C0050E1B7 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8C20A0E51665DA5C0050E1B7 /* en */,
-			);
-			name = MainMenu.xib;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8C20A0E71665DA5C0050E1B7 /* Debug */ = {
+		8C69A8531E984B73004FB1BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		8C20A0E81665DA5C0050E1B7 /* Release */ = {
+		8C69A8541E984B73004FB1BC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
-		8C20A0EA1665DA5C0050E1B7 /* Debug */ = {
+		8C69A8561E984B73004FB1BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kubee/Kubee.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Kubee/Kubee-Prefix.pch";
-				INFOPLIST_FILE = "Kubee/Kubee-Info.plist";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = Kubee/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuba.Kubee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		8C20A0EB1665DA5C0050E1B7 /* Release */ = {
+		8C69A8571E984B73004FB1BC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kubee/Kubee.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Kubee/Kubee-Prefix.pch";
-				INFOPLIST_FILE = "Kubee/Kubee-Info.plist";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = Kubee/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuba.Kubee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8C69A8591E984B73004FB1BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5P99QDD6WR;
+				INFOPLIST_FILE = KubeeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kubeeapp.KubeeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kubee.app/Contents/MacOS/Kubee";
+			};
+			name = Debug;
+		};
+		8C69A85A1E984B73004FB1BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5P99QDD6WR;
+				INFOPLIST_FILE = KubeeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kubeeapp.KubeeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kubee.app/Contents/MacOS/Kubee";
+			};
+			name = Release;
+		};
+		8C69A85C1E984B73004FB1BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5P99QDD6WR;
+				INFOPLIST_FILE = KubeeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kubeeapp.KubeeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Kubee;
+			};
+			name = Debug;
+		};
+		8C69A85D1E984B73004FB1BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5P99QDD6WR;
+				INFOPLIST_FILE = KubeeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kubeeapp.KubeeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Kubee;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8C20A0C51665DA5C0050E1B7 /* Build configuration list for PBXProject "Kubee" */ = {
+		8C69A82B1E984B72004FB1BC /* Build configuration list for PBXProject "Kubee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8C20A0E71665DA5C0050E1B7 /* Debug */,
-				8C20A0E81665DA5C0050E1B7 /* Release */,
+				8C69A8531E984B73004FB1BC /* Debug */,
+				8C69A8541E984B73004FB1BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8C20A0E91665DA5C0050E1B7 /* Build configuration list for PBXNativeTarget "Kubee" */ = {
+		8C69A8551E984B73004FB1BC /* Build configuration list for PBXNativeTarget "Kubee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8C20A0EA1665DA5C0050E1B7 /* Debug */,
-				8C20A0EB1665DA5C0050E1B7 /* Release */,
+				8C69A8561E984B73004FB1BC /* Debug */,
+				8C69A8571E984B73004FB1BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C69A8581E984B73004FB1BC /* Build configuration list for PBXNativeTarget "KubeeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C69A8591E984B73004FB1BC /* Debug */,
+				8C69A85A1E984B73004FB1BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C69A85B1E984B73004FB1BC /* Build configuration list for PBXNativeTarget "KubeeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C69A85C1E984B73004FB1BC /* Debug */,
+				8C69A85D1E984B73004FB1BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8C20A0C21665DA5C0050E1B7 /* Project object */;
+	rootObject = 8C69A8281E984B72004FB1BC /* Project object */;
 }

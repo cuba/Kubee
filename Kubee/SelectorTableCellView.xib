@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12118"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <tableCellView identifier="selector" focusRingType="none" id="Fyo-Ck-Bio" customClass="SelectorTableCellView" customModule="Kubee" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="256" height="140"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Jj-Cn-0T2">
+                    <rect key="frame" x="1" y="70" width="75" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="71" id="ACO-aR-xIS"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Replace:" id="s5a-BA-lv0">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXX-hR-x9B">
+                    <rect key="frame" x="1" y="40" width="75" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="71" id="Klh-SL-BH1"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="With:" id="hsV-ba-hd6">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="249" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8C-ug-xIe">
+                    <rect key="frame" x="13" y="12" width="172" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Transformation:" id="8hm-VP-yCP">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton translatesAutoresizingMaskIntoConstraints="NO" id="9sv-lM-XtI">
+                    <rect key="frame" x="191" y="10" width="51" height="21"/>
+                    <popUpButtonCell key="cell" type="bevel" title="None" bezelStyle="regularSquare" imagePosition="left" alignment="right" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" preferredEdge="maxX" selectedItem="Cq0-QW-pkT" id="7e8-cu-rPR">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                        <menu key="menu" id="a4q-VU-eYD">
+                            <items>
+                                <menuItem title="None" state="on" id="Cq0-QW-pkT">
+                                    <attributedString key="attributedTitle"/>
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                    <accessibility identifier="NONE"/>
+                                </menuItem>
+                                <menuItem title="Capitalize" id="fhg-yL-Mna">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                    <accessibility identifier="CAPITALIZE"/>
+                                </menuItem>
+                                <menuItem title="Uppercase" id="6Zg-Ga-bLf">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                    <accessibility identifier="UPPERCASE"/>
+                                </menuItem>
+                                <menuItem title="Lowercase" id="4QT-Ms-K0r">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                    <accessibility identifier="LOWERCASE"/>
+                                </menuItem>
+                            </items>
+                            <connections>
+                                <outlet property="delegate" destination="Fyo-Ck-Bio" id="M13-nP-ldZ"/>
+                            </connections>
+                        </menu>
+                    </popUpButtonCell>
+                </popUpButton>
+                <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="Kv3-OB-UIn">
+                    <rect key="frame" x="3" y="-1" width="250" height="5"/>
+                </box>
+                <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsS-Lq-eEO">
+                    <rect key="frame" x="15" y="106" width="126" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" title="{some_selector}" bezelStyle="round" id="Qye-Iw-n0X">
+                        <font key="font" metaFont="systemBold"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="delegate" destination="Fyo-Ck-Bio" id="ZyG-0P-IsI"/>
+                    </connections>
+                </textField>
+                <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RK-vS-LUl">
+                    <rect key="frame" x="231" y="108" width="13" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="0" id="Tgn-dY-0Qx">
+                        <font key="font" metaFont="systemBold"/>
+                        <color key="textColor" red="0.22038277116402116" green="0.22038277116402116" blue="0.22038277116402116" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField identifier="replace" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVb-lj-LGG">
+                    <rect key="frame" x="82" y="67" width="160" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="Upo-BX-cYb">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <allowedInputSourceLocales>
+                            <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                        </allowedInputSourceLocales>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="delegate" destination="Fyo-Ck-Bio" id="FWk-9t-vmT"/>
+                    </connections>
+                </textField>
+                <textField identifier="with" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pc-Ma-3Q6">
+                    <rect key="frame" x="82" y="38" width="160" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="yB8-sx-Ljw">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <allowedInputSourceLocales>
+                            <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                        </allowedInputSourceLocales>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="delegate" destination="Fyo-Ck-Bio" id="Vhg-de-iHy"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="9sv-lM-XtI" firstAttribute="leading" secondItem="l8C-ug-xIe" secondAttribute="trailing" constant="8" id="0jN-tt-2vf"/>
+                <constraint firstItem="1pc-Ma-3Q6" firstAttribute="leading" secondItem="jXX-hR-x9B" secondAttribute="trailing" constant="8" id="4ln-6K-nHx"/>
+                <constraint firstAttribute="trailing" secondItem="5RK-vS-LUl" secondAttribute="trailing" constant="14" id="6Dv-b9-Wo1"/>
+                <constraint firstItem="1pc-Ma-3Q6" firstAttribute="top" secondItem="OVb-lj-LGG" secondAttribute="bottom" constant="7" id="7LZ-i7-0l7"/>
+                <constraint firstItem="jXX-hR-x9B" firstAttribute="leading" secondItem="Fyo-Ck-Bio" secondAttribute="leading" constant="3" id="AqK-OW-hyj"/>
+                <constraint firstAttribute="trailing" secondItem="OVb-lj-LGG" secondAttribute="trailing" constant="14" id="CNh-SJ-VKM"/>
+                <constraint firstItem="3Jj-Cn-0T2" firstAttribute="leading" secondItem="Fyo-Ck-Bio" secondAttribute="leading" constant="3" id="DX8-Eo-CvT"/>
+                <constraint firstItem="Kv3-OB-UIn" firstAttribute="leading" secondItem="Fyo-Ck-Bio" secondAttribute="leading" constant="3" id="Eh2-1I-9a4"/>
+                <constraint firstAttribute="trailing" secondItem="1pc-Ma-3Q6" secondAttribute="trailing" constant="14" id="G2u-HS-ytY"/>
+                <constraint firstAttribute="trailing" secondItem="Kv3-OB-UIn" secondAttribute="trailing" constant="3" id="KFK-Dj-6eY"/>
+                <constraint firstItem="OVb-lj-LGG" firstAttribute="leading" secondItem="3Jj-Cn-0T2" secondAttribute="trailing" constant="8" id="QVq-jM-I0P"/>
+                <constraint firstItem="jXX-hR-x9B" firstAttribute="top" secondItem="3Jj-Cn-0T2" secondAttribute="bottom" constant="13" id="T5z-2A-kqr"/>
+                <constraint firstItem="OVb-lj-LGG" firstAttribute="top" secondItem="jsS-Lq-eEO" secondAttribute="bottom" constant="17" id="Tcf-Ve-AXq"/>
+                <constraint firstItem="5RK-vS-LUl" firstAttribute="top" secondItem="Fyo-Ck-Bio" secondAttribute="top" constant="15" id="VHa-Ib-pZA"/>
+                <constraint firstItem="l8C-ug-xIe" firstAttribute="top" secondItem="jXX-hR-x9B" secondAttribute="bottom" constant="11" id="Yv3-HR-zK8"/>
+                <constraint firstItem="jsS-Lq-eEO" firstAttribute="top" secondItem="Fyo-Ck-Bio" secondAttribute="top" constant="12" id="ZCf-Ur-PyL"/>
+                <constraint firstAttribute="bottom" secondItem="l8C-ug-xIe" secondAttribute="bottom" constant="12" id="ZP4-F1-waM"/>
+                <constraint firstItem="9sv-lM-XtI" firstAttribute="top" secondItem="1pc-Ma-3Q6" secondAttribute="bottom" constant="7" id="bgW-LJ-VYN"/>
+                <constraint firstAttribute="bottom" secondItem="9sv-lM-XtI" secondAttribute="bottom" constant="10" id="oYc-R6-c4W"/>
+                <constraint firstItem="l8C-ug-xIe" firstAttribute="leading" secondItem="Fyo-Ck-Bio" secondAttribute="leading" constant="15" id="qid-h2-s1p"/>
+                <constraint firstAttribute="bottom" secondItem="Kv3-OB-UIn" secondAttribute="bottom" constant="1" id="u8M-II-ozS"/>
+                <constraint firstAttribute="trailing" secondItem="9sv-lM-XtI" secondAttribute="trailing" constant="14" id="u8V-rB-4dJ"/>
+                <constraint firstItem="jsS-Lq-eEO" firstAttribute="leading" secondItem="Fyo-Ck-Bio" secondAttribute="leading" constant="15" id="vFs-PQ-l5c"/>
+            </constraints>
+            <connections>
+                <outlet property="capitalizeMenuItem" destination="fhg-yL-Mna" id="a4O-25-hNK"/>
+                <outlet property="lowercaseMenuItem" destination="4QT-Ms-K0r" id="xoZ-Fg-uCN"/>
+                <outlet property="noneMenuItem" destination="Cq0-QW-pkT" id="THR-5y-8eo"/>
+                <outlet property="replaceLabel" destination="3Jj-Cn-0T2" id="rP4-vo-rO2"/>
+                <outlet property="replaceTextField" destination="OVb-lj-LGG" id="bet-xA-kKm"/>
+                <outlet property="selectorTextField" destination="jsS-Lq-eEO" id="Hlx-gl-XXa"/>
+                <outlet property="textTransformationMenu" destination="a4q-VU-eYD" id="Eg4-dh-h36"/>
+                <outlet property="transformationLabel" destination="l8C-ug-xIe" id="I08-B6-fgS"/>
+                <outlet property="uppercaseMenuItem" destination="6Zg-Ga-bLf" id="cr7-em-SZu"/>
+                <outlet property="withLabel" destination="jXX-hR-x9B" id="L5q-If-zVq"/>
+                <outlet property="withTextField" destination="1pc-Ma-3Q6" id="ueH-tG-cOX"/>
+            </connections>
+            <point key="canvasLocation" x="119" y="469"/>
+        </tableCellView>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customFormatter id="O1N-0t-v9p"/>
+    </objects>
+</document>

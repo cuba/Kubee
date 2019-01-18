@@ -1,0 +1,47 @@
+/* 
+  Localized.strings
+  Kubee
+
+  Created by Jacob Sikorski on 2015-06-24.
+  Copyright © 2015 Jacob Sikorski. All rights reserved.
+*/
+
+// Common
+"Ok" = "Ok";
+"Cancel" = "Cancel";
+
+// Labels
+"Label.AddFiles" = "Add Files";
+"Label.RenameFiles" = "Rename Files";
+"Label.RenameSelectedFiles" = "Rename Selected Files";
+"Label.Filter" = "Filter";
+"Label.Replace" = "Replace";
+
+// Placeholder
+"Placeholder.Filter" = "";
+"Placeholder.Replace" = "";
+
+// Messages
+"Message.FileWillNotBeRenamed" = "The file will not be renamed.";
+
+// Title
+"Title.ParsingError" = "Could not parse the string";
+
+// Parsing Errors
+"ParsingError.ExpectingCharacter" = "Expected a '{expectedCharacter}' but recieved a '{unexpectedCharacter}' at position {position}";
+"ParsingError.UnexpectedCharacter" = "Unexpected character '{unexpectedCharacter}' at position {position}";
+"ParsingError.Terminated" = "Expected a '{expectedCharacter}' but the string ended unexpectedly at position {position}";
+
+// Filter Errors
+"FilterError.AmbiguousSelector" = "Ambiguous selector '{selector}' found.  Each selector must be unique.  In other words, the selector '{selector}' can only appear once in your filter";
+
+// Replace Filter Errors
+"ReplaceFilterError.SelectorNotFound" = "The selector '{selector}' could not be found in the filter.";
+"ReplaceFilterError.Empty" = "The replace field can not be empty.";
+
+// Renaming Errors
+"FileNameParsingError.Title" = "There was a problem with attempting to preview this value.";
+"FileNameParsingError.StaticComponentNotFound" = "Could not find the static string '{staticComponent}' defined in your filter.";
+
+// File Rename Reasons
+"RENAME_FAILURE_REASON_FILTER_INVALID" = "Filter is invalid for this file name";
